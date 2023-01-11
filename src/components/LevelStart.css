@@ -1,0 +1,29 @@
+
+.before {
+    content: "";
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    position: absolute;
+}
+
+.levelStart:after {
+    background-image: url("/public/assets/blackBg.svg");
+    z-index: -1;
+    background-size: cover;
+    @apply before;
+}
+
+.levelStart:before {
+    background: black;
+    z-index: -1;
+    background-size: cover;
+    @apply before;
+}
+
+.btn-main {
+    background-image: url("/public/assets/btnBlackStart.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
