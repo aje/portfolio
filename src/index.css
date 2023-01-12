@@ -29,6 +29,18 @@ body {
     @apply before;
 }
 
+
+.footer-bg:before {
+    @apply before;
+    background-image: url("/public/assets/ground.svg");
+    z-index: -1;
+    bottom: 0;
+    top:auto;
+    height: 25vh;
+    background-position-y: top;
+
+}
+
 .index-bg {
     @apply before;
     z-index: -1;

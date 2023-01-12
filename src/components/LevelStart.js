@@ -17,8 +17,8 @@ const LevelStart = ({title}) => {
     return (
         <div className={"levelStart h-screen text-center flex flex-col items-center justify-center relative"}>
             {loading ?
-                <h1 className={"text-7xl mb-20 text-gradient"}>
-                    {lastLvl <= 0 ? "INITIALIZING WORLD....." : "Loading next level....."}
+                <h1 className={"text-6xl mb-20 text-gradient"}>
+                    {lastLvl <= 0 ? "INITIALIZING WORLD..." : "Loading next level..."}
                 </h1>
                 : <>
                 <a href={lastLvl <= 0 ? "/": `/level/${lastLvl}`} className="absolute flex items-center top-20 left-20 text-3xl">
