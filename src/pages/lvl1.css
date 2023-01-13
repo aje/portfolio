@@ -1,0 +1,6 @@
+.avatar {
+    background-image: url("/public/assets/avatar.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
