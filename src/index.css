@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    @apply bg-gradient-to-t from-[#FFB2DD] to-[#8E32B3] h-screen text-white relative;
+    @apply leading-loose bg-gradient-to-t from-[#FFB2DD] to-[#8E32B3] h-screen text-white relative;
 }
 
 .before {
@@ -108,6 +108,7 @@ body {
 
 .myBox {
     border-width: 4px;
+    position: relative;
 }
 
 .myBox:before {
@@ -132,28 +133,39 @@ body {
     border-left-color: transparent;
     width: 0;
     height: 0;
-    bottom: -16px;
+    bottom: -20px;
     top: unset;
-    left: 30%;
+    left: 35%;
     right: unset;
     position: absolute;
 }
 
 .arrow {
     @apply arrows;
-    border-right-width: 6px;
-    border-left-width: 6px;
-    border-bottom-width: 8px;
-    border-top-width: 8px;
+    border-right-width: 8px;
+    border-left-width: 8px;
+    border-bottom-width: 10px;
+    border-top-width: 10px;
 }
 
 .arrow:before {
     @apply arrows border-sky-900;
     content: "";
     z-index: -1;
-    border-right-width: 8px;
-    border-left-width: 8px;
-    border-bottom-width: 12px;
-    border-top-width: 12px;
-    left: calc(30% - 8px);
+    border-right-width: 12px;
+    border-left-width: 12px;
+    border-bottom-width: 14px;
+    border-top-width: 14px;
+    left: calc(30% - 13px);
+}
+
+.myBox.sky {
+    @apply bg-sky-500 border-solid before:bg-sky-500 after:bg-sky-500 border-sky-900
+}
+.myBox.gray {
+    @apply text-2xl bg-blue-200 p-8 border-solid before:bg-blue-200 after:bg-blue-200 border-sky-900 text-sky-900
+}
+
+.main-container {
+    @apply  container flex-col h-screen flex justify-center relative pb-32 items-center
 }
