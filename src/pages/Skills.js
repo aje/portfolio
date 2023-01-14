@@ -51,20 +51,7 @@ const Skills = () => {
                             <li>
                                 <div className="flex items-center mb-8">
                                     <img className={"w-10 mr-6"} src="/assets/gaming.png" alt=""/>
-                                    <p className={"flex-1"}>PHP, Java, ...</p>
-                                    <div className="text-3xl text-sky-600 ">42 Months XP</div>
-                                </div>
-                                {/*<div className={"mb-8 mt-4 relative"}>*/}
-                                {/*    <div className="myBox gray h-5">*/}
-                                {/*        <div className="absolute -top-1 -left-1 w-full">*/}
-                                {/*        <div className="myBox sky  w-[50%]  h-5"/></div>*/}
-                                {/*    </div>*/}
-                                {/*</div>*/}
-                            </li>
-                            <li>
-                                <div className="flex items-center mb-8">
-                                    <img className={"w-10 mr-6"} src="/assets/gaming.png" alt=""/>
-                                    <p className={"flex-1"}>NextJS, NodeJS, ...</p>
+                                    <p className={"flex-1"}>NextJS, NodeJS,PHP, Java, ...</p>
                                     <div className="text-3xl text-sky-600 ">10 Months XP</div>
                                 </div>
                                 {/*<div className={"mb-8 mt-4 relative"}>*/}
@@ -87,6 +74,12 @@ const Skills = () => {
                                 {/*        <div className="myBox sky  w-[60%]  h-5"/></div>*/}
                                 {/*    </div>*/}
                                 {/*</div>*/}
+                            </li>
+
+                            <li>
+                                <div className="flex items-center mb-8">
+                                    <p className={"flex-1"}>...</p>
+                                </div>
                             </li>
 
                         </ul>

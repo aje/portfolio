@@ -19,18 +19,26 @@ const Home = () => {
                 </div>
 
 
-                <h2 className={"text-3xl mt-32 text-shadow"}>Follow me at</h2>
-                <div className="flex items-center mt-12">
-                    <a href="" className="mr-20 transition duration-150 hover:scale-110  cursor-pointer">
-                        <img src={"/assets/btnFb.svg"} alt=""/>
+                <h2 className={"text-3xl mt-32 text-shadow"}>Contact me at</h2>
+                <div className="flex items-end mt-8">
+                    <a href="" title={"Email"} className="mr-16 transition duration-150 hover:scale-110  cursor-pointer">
+                        <img src={"/assets/mail.png"} width={40} alt="Email"/>
                     </a>
-                    <a href="" className="mr-20 transition duration-150 hover:scale-110  cursor-pointer">
-                        <img src={"/assets/btnInsta.svg"} alt=""/>
+                    <a href="" title={"Linkedin"} className="mr-16 transition duration-150 hover:scale-110  cursor-pointer">
+                        <img src="/assets/linkedin.png" width={40} alt="Linkedin"/>
                     </a>
-                    <a href="" className="mr-20 transition duration-150 hover:scale-110  cursor-pointer">
-                        <img src={"/assets/btnLinkedin.svg"} alt=""/>
+                    <a href="" className="mr-16 transition duration-150 hover:scale-110  cursor-pointer">
+                        <img src="/assets/chat.png" width={40} title={"WeChat"} alt="WeChat"/>
                     </a>
+                    {/*<a href="" className="mr-16 transition duration-150 hover:scale-110  cursor-pointer">*/}
+                    {/*    <img src={"/assets/btnLinkedin.svg"} alt=""/>*/}
+                    {/*</a>*/}
                 </div>
+                <p className={"mt-8 text-sky-900"}>Email: behroozina@live.com</p>
+                <p className={" text-sky-900"}>Resume: <a href="/" className={"text-sky-700 hover:underline"} title={"Download PDF"}>
+                    <img src="/assets/downloading.png" width={20} alt="Download Behrouz Erfania Resume" className="inline mr-2"/>
+                    Download PDF
+                </a></p>
             </div>
         </>
     );

@@ -5,9 +5,9 @@ import {useParams} from "react-router-dom";
 export const levels = [
     'Know about me',
     "explore my skills",
-    "project showcase",
-    "work experience",
     'certificates',
+    "work experience",
+    "project showcase",
     'recommendations',
     'contact'
 ]
@@ -18,7 +18,7 @@ const LevelStart = ({title}) => {
     const [loading, setLoading] = useState(true);
 
     useEffect(()=>{
-        setTimeout(()=>setLoading(false), 1000)
+        setTimeout(()=>setLoading(false), 500)
     }, [])
 
 
@@ -35,9 +35,12 @@ const LevelStart = ({title}) => {
                 </a>
                 <h1 className={"text-7xl mb-20 text-gradient"}>Level {level}</h1>
                 <h2 className={"text-4xl mb-24 text-shadow"}>{levels[lastLvl]}</h2>
-                <a href={`/level/${level}/content`} className={"cursor-pointer mr-6 transition duration-150 hover:scale-110 btn-main inline-block text-3xl p-12"}>
-                    <span className="text-gradient">START</span>
-                </a>
+                    <div className="flex items-center">
+                        <a href={`/level/${parseInt(level) +1 }`} className="mr-24 opacity-50 text-2xl">Skip</a>
+                        <a href={`/level/${level}/content`} className={"cursor-pointer mr-6 transition duration-150 hover:scale-110 btn-main inline-block text-3xl p-12"}>
+                            <span className="text-gradient">START</span>
+                        </a>
+                    </div>
             </>}
         </div>
     );
