@@ -80,7 +80,7 @@ body {
 .text-gradient {
     background: linear-gradient(to top, #FFB2DD 0%,#FFB2DD 45%, rgba(225, 255, 255, 1) 45%, rgba(255, 255, 255, 1) 100%);
     -webkit-text-stroke: 1px black;
-
+    position: relative;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

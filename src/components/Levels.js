@@ -6,6 +6,8 @@ import ErrorPage from "./ErrorPage";
 import Experience from "../pages/Experience";
 import Edu from "../pages/Edu";
 import Recommendations from "../pages/Recommendations";
+import Contact from "../pages/Contact";
+import End from "../pages/End";
 
 const Levels = () => {
     const {level} = useParams();
@@ -23,6 +25,10 @@ const Levels = () => {
             return <Showcase />
         case "6":
             return <Recommendations />
+        case "7":
+            return <Contact />
+        case "8":
+            return <End />
         default:
             return <ErrorPage />
     }

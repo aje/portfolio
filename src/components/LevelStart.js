@@ -9,7 +9,8 @@ export const levels = [
     "work experience",
     "project showcase",
     'recommendations',
-    'contact'
+    'boss level',
+    'congratulations'
 ]
 const LevelStart = ({title}) => {
     const {level} = useParams();
@@ -33,13 +34,16 @@ const LevelStart = ({title}) => {
                     <img  src={"/assets/backArrow.svg"} className={"mr-12"}/>
                     {lastLvl <= 0 ? "Start Over" : `Level ${lastLvl}`}
                 </a>
-                <h1 className={"text-7xl mb-20 text-gradient"}>Level {level}</h1>
-                <h2 className={"text-4xl mb-24 text-shadow"}>{levels[lastLvl]}</h2>
+                <h1 className={"text-7xl mb-20 text-gradient"}>{level === "8" ? "Congratulations" : `Level ${level}`}</h1>
+                <h2 className={"text-4xl mb-24 text-shadow"}>
+                    {level !== "8" ? levels[lastLvl] : <>You have passed all the levels <br/> You can go to any levels or start over <br/><br/> Feel free to contact me for any work</>}</h2>
                     <div className="flex items-center">
-                        <a href={`/level/${parseInt(level) +1 }`} className="mr-24 opacity-50 text-2xl">Skip</a>
+                        {level !== "8" ? <><a href={`/level/${parseInt(level) +1 }`} className="mr-24 opacity-50 text-2xl">Skip</a>
                         <a href={`/level/${level}/content`} className={"cursor-pointer mr-6 transition duration-150 hover:scale-110 btn-main inline-block text-3xl p-12"}>
                             <span className="text-gradient">START</span>
-                        </a>
+                        </a></>
+
+                            : <>start over</>}
                     </div>
             </>}
         </div>
