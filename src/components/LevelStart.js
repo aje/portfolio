@@ -43,7 +43,11 @@ const LevelStart = ({title}) => {
                             <span className="text-gradient">START</span>
                         </a></>
 
-                            : <>start over</>}
+                            : <a className={"text-shadow text-3xl hover:scale-110 duration-150 hover:text-blue-200 cursor-pointer"} href={"/"}>
+                                <img src="/assets/levelClearedAlian.svg" alt="" width={44} className={"mx-4 inline"}/>
+                                start over
+                                <img src="/assets/levelClearedAlian.svg" alt="" width={44} className={"mx-4 inline"}/>
+                        </a>}
                     </div>
             </>}
         </div>
