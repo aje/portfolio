@@ -1,7 +1,7 @@
 import './index.css';
 import {createBrowserRouter, RouterProvider,} from "react-router-dom";
 import Home from "./pages/home";
-import LevelStart from "./components/LevelStart";
+import LevelStart from "./pages/LevelStart";
 import ErrorPage from "./components/ErrorPage";
 import Levels from "./components/Levels";
 

@@ -13,7 +13,7 @@ const LvlClear = ({nextLevel}) => {
                 Click on the ufo to enter next level
             </h2>
 
-            <a href={`/level/${nextLevel}`} className="-mb-20 hover:scale-[1.2] duration-75 ">
+            <a href={`/level/${nextLevel}`} className="-mb-20 hover:scale-[1.2] duration-150 ">
             <img src="/assets/ufo.svg" alt="ufo"/>
             </a>
 

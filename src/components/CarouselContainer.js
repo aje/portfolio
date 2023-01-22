@@ -1,7 +1,7 @@
 import Carousel from "nuka-carousel"
 import LvlClear from "../pages/LvlClear";
 import {useParams} from "react-router-dom";
-import {levels} from "./LevelStart";
+import {levels} from "../pages/LevelStart";
 
 
 const CarouselContainer = ({children}) => {

@@ -9,7 +9,7 @@ const Home = () => {
                 <h1 className={"text-7xl mt-20 text-gradient relative after:content-['Welcome']"}>Welcome</h1>
                 <h1 className={"text-7xl text-gradient relative after:content-['Player1']"}>Player1</h1>
                 <h2 className={"text-4xl mt-20 text-shadow"}>Press start to<br/>
-                    Enter story mode</h2>
+                    Enter my story</h2>
 
                 <div className={"mt-12 flex items-center"}>
                     <a href={'/level/1'} className={"cursor-pointer mr-6 transition duration-150 hover:scale-110 btn-main inline-block text-3xl p-12"}>
@@ -34,8 +34,8 @@ const Home = () => {
                     {/*    <img src={"/assets/btnLinkedin.svg"} alt=""/>*/}
                     {/*</a>*/}
                 </div>
-                <p className={"mt-8 text-sky-900"}>Email: behroozina@live.com</p>
-                <p className={" text-sky-900"}>Resume: <a href="/" className={"text-sky-700 hover:underline"} title={"Download PDF"}>
+                <p className={"mt-8 text-sky-900 text-xl text-shadow-1"}>Email: behroozina@live.com</p>
+                <p className={" text-sky-900 text-shadow-1 text-xl"}>Resume: <a href="/" className={"text-sky-700 hover:underline"} title={"Download PDF"}>
                     <img src="/assets/downloading.png" width={20} alt="Download Behrouz Erfania Resume" className="inline mr-2"/>
                     Download PDF
                 </a></p>

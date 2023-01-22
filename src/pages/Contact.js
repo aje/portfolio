@@ -18,8 +18,15 @@ const Contact = () => {
                     <p className={"mb-6 flex items-center"}><img src="/assets/linkedin.png" className={"w-8 mr-4 inline"} alt='position'/><span className={"flex-1 mr-20"}>Linkedin: </span> linkdin/behroozina</p>
                     <p className={"mb-6 flex items-center"}><img src="/assets/chat.png" className={"w-8 mr-4 inline"} alt='source'/><span className={"flex-1"}>Wechat:</span> Behrooozinaa</p>
                 </div>
+
+
+
             </div>
 
+
+            <a href={`/level/8`} className=" hover:scale-[1.2] duration-75 ">
+                <img src="/assets/ufo.svg" alt="ufo"/>
+            </a>
 
         </>
     );

@@ -1,5 +1,5 @@
 import "./lvl1.css"
-import {levels} from "../components/LevelStart";
+import {levels} from "./LevelStart";
 import {useParams} from "react-router-dom";
 
 const Bio = () => {

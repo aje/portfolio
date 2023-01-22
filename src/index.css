@@ -77,6 +77,10 @@ body {
     text-shadow: 0 4px #402F5C;
 }
 
+.text-shadow-1 {
+    text-shadow: 0 2px #fff;
+}
+
 .text-gradient {
     background: linear-gradient(to top, #FFB2DD 0%,#FFB2DD 45%, rgba(225, 255, 255, 1) 45%, rgba(255, 255, 255, 1) 100%);
     -webkit-text-stroke: 1px black;
