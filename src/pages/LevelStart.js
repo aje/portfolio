@@ -1,6 +1,7 @@
 import {useEffect, useState} from 'react';
-import "../components/LevelStart.css"
+import "./LevelStart.css"
 import {useNavigate, useParams,} from "react-router-dom";
+import Congrats from "./Congrats";
 
 
 export const levels = [
@@ -19,7 +20,6 @@ const LevelStart = ({title}) => {
     const navigate = useNavigate();
 
     const [loading, setLoading] = useState(true);
-    const [s, setS] = useState(3)
 
     useEffect(()=>{
         setTimeout(()=>setLoading(false), 500)
@@ -40,12 +40,12 @@ const LevelStart = ({title}) => {
                 </h1>
                 : <>
                 <a href={lastLvl <= 0 ? "/": `/level/${lastLvl}`} className="absolute flex items-center top-20 left-20 text-3xl">
-                    <img  src={"/assets/backArrow.svg"} className={"mr-12"}/>
+                    <img  src={"/assets/backArrow.svg"} className={"mr-12"} alt={""}/>
                     {lastLvl <= 0 ? "Start Over" : `Level ${lastLvl}`}
                 </a>
                 <h1 className={"text-7xl mb-20 text-gradient"}>{level === "8" ? "Congratulations" : `Level ${level}`}</h1>
                 <h2 className={"text-4xl mb-24 text-shadow"}>
-                    {level !== "8" ? levels[lastLvl] : <>You have passed all the levels <br/> You can go to any levels or start over <br/><br/> Feel free to contact me for any work</>}</h2>
+                    {level !== "8" ? levels[lastLvl] : <>You have passed all the levels <br/> You can go to any levels or start over <br/></>}</h2>
                     <div className="flex items-center">
                         {level !== "8" ? <>
                         {/*.text-2xlloading in {s}s*/}
@@ -55,11 +55,7 @@ const LevelStart = ({title}) => {
                         </a>
                             </>
 
-                            : <a className={"text-shadow text-3xl hover:scale-110 duration-150 hover:text-blue-200 cursor-pointer"} href={"/"}>
-                                <img src="/assets/levelClearedAlian.svg" alt="" width={44} className={"mx-4 inline"}/>
-                                start over
-                                <img src="/assets/levelClearedAlian.svg" alt="" width={44} className={"mx-4 inline"}/>
-                        </a>}
+                            : <Congrats />}
                     </div>
             </>}
         </div>
