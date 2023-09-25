@@ -1,38 +1,6 @@
 import CarouselContainer from "../components/CarouselContainer";
 import EduItem from "../components/EduItem";
-
-const  edus = [
-    {
-        name: "Southwest Jiaotong",
-        image: "img.png",
-        url: "/ohioh",
-        description: "Sunrain is a major company",
-        position: "Front end developer",
-        start: "2021/02",
-        finish: "2022/02",
-        type: "master",
-    },
-    {
-        name: "Googsell",
-        image: "img.png",
-        url: "/ohioh",
-        description: "Sunrain is a major company",
-        position: "Front end developer",
-        start: "2021/02",
-        finish: "2022/02",
-        type: "bachelor",
-    },
-    {
-        name: "Googsell",
-        image: "img.png",
-        url: "/ohioh",
-        description: "Sunrain is a major company",
-        position: "Front end developer",
-        start: "2021/02",
-        finish: "2022/02",
-        type: "Coursera",
-    },
-]
+import {edus} from "../data";
 
 const Edu = () => {
     return (
@@ -48,11 +16,12 @@ const Edu = () => {
             {/*            <br />Please be pationt so you can pass this level!</p>*/}
             {/*    </div>*/}
 
-
             {/*    <img src={"/assets/astro.svg"}  className={"absolute scale-x-[-1] bottom-[14vh] left-[45%]"}/>*/}
             {/*</div>*/}
 
-            {edus.map(item => <EduItem item={item}/>)}
+            {edus.map((item) => (
+                <EduItem item={item} />
+            ))}
         </CarouselContainer>
     );
 };

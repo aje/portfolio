@@ -1,10 +1,9 @@
-import './index.css';
-import {createBrowserRouter, RouterProvider,} from "react-router-dom";
+import "./index.css";
+import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import Home from "./pages/home";
 import LevelStart from "./pages/LevelStart";
 import ErrorPage from "./components/ErrorPage";
 import Levels from "./components/Levels";
-
 
 const router = createBrowserRouter([
     {
@@ -14,11 +13,11 @@ const router = createBrowserRouter([
     },
     {
         path: "/level/:level",
-        element: <LevelStart/>,
+        element: <LevelStart />,
     },
     {
         path: "/level/:level/content",
-        element: <Levels/>,
+        element: <Levels />,
     },
     // {
     //     path: "/level/2/content",

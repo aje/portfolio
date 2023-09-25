@@ -1,26 +1,6 @@
 import CarouselContainer from "../components/CarouselContainer";
 import ExperienceItem from "../components/ExperieceItem";
-
-const  experiences = [
-    {
-        name: "Sunrain Project Manager",
-        image: "img_1.png",
-        url: "/ohioh",
-        description: "Sunrain is a major company",
-        position: "Front end developer",
-        start: "2021/02",
-        finish: "2022/02",
-    },
-    {
-        name: "Googsell",
-        image: "img_1.png",
-        url: "/ohioh",
-        description: "Sunrain is a major company",
-        position: "Front end developer",
-        start: "2021/02",
-        finish: "2022/02",
-    },
-]
+import {experiences} from "../data";
 
 const Experience = () => {
     return (
@@ -36,11 +16,12 @@ const Experience = () => {
             {/*            <br />Please be pationt so you can pass this level!</p>*/}
             {/*    </div>*/}
 
-
             {/*    <img src={"/assets/astro.svg"}  className={"absolute scale-x-[-1] bottom-[14vh] left-[45%]"}/>*/}
             {/*</div>*/}
 
-            {experiences.map(item => <ExperienceItem item={item}/>)}
+            {experiences.map((item) => (
+                <ExperienceItem item={item} />
+            ))}
             {/*<div className="main-container">*/}
             {/*    <h1 className="text-gradient text-5xl relative after:content-['Work_experience']">Work Experience</h1>*/}
             {/*</div>*/}
