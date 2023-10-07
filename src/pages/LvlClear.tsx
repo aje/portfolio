@@ -1,4 +1,4 @@
-const LvlClear = ({nextLevel}: {nextLevel: string}) => {
+const LvlClear = ({nextLevel}: {nextLevel: number}) => {
     return (
         <div className={"container flex-col h-screen flex justify-around pb-32 items-center"}>
             <div className=" flex items-center  mt-24 ">
