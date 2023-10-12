@@ -1,11 +1,9 @@
 export type EduType = {
     name: string;
-    image: string;
-    description: string;
+    major: string;
     start: string;
     finish: string;
     type: string;
-    url: string;
 };
 
 export type ExpType = {
@@ -13,9 +11,9 @@ export type ExpType = {
     image: string;
     description: string;
     start: string;
-    finish: string;
+    finish?: string;
     position: string;
-    url: string;
+    url?: string;
 };
 
 export type ProjectType = {

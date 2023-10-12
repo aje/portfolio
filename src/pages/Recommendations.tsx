@@ -31,7 +31,7 @@ function Item({item}: {item: RecType}) {
                     </p>
                 </div>
             </div>
-            <p className="text-3xl relative text-center mt-12 px-16">{item.description}</p>
+            <p className="text-3xl relative text-center mt-12 px-16 font-mono ">{item.description}</p>
         </div>
     );
 }

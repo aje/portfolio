@@ -26,9 +26,13 @@ const Showcase = () => {
                 <img src={"/assets/scientist.svg"} className={"absolute  bottom-[14vh] left-[45%]"} alt={"scientist"} />
             </div>
 
-            {projects.map((item) => (
-                <ProjectItem item={item} />
-            ))}
+            <div className={"main-container !pb-0"}>
+                <div className="grid grid-cols-4 gap-10 overflow-y-scroll overflow-x-hidden" style={{maxHeight: "80%"}}>
+                    {projects.map((item) => (
+                        <ProjectItem item={item} />
+                    ))}
+                </div>
+            </div>
         </CarouselContainer>
     );
 };

@@ -24,7 +24,7 @@ const Contact = () => {
                 <div className="mt-20 text-xl">
                     <p className={"mb-6 flex items-center"}>
                         <img src="/assets/mail.png" className={"w-8 mr-4 inline"} alt="email" />
-                        <span className={"flex-1"}>email:</span>
+                        <span className={"flex-1 mr-20"}>email:</span>
                         <a href={`mailto:${profile.email}`} className={"hover:text-blue-500  text-blue-100"}>
                             {profile.email}
                         </a>
@@ -52,7 +52,13 @@ const Contact = () => {
                             className={"w-8 mr-4 inline"}
                         />
                         <span className={"flex-1 mr-20"}>Resume: </span>
-                        <a href={profile.resume} className={"hover:text-blue-500 text-blue-100"} title={"Download PDF"}>
+                        <a
+                            href={profile.resume}
+                            download={"Resume-Behrouz-Erfanian"}
+                            className={
+                                "bg-sky-200 hover:bg-sky-400 text-black  hover:scale-105  transition inline-block p-1 myBox hover:underline"
+                            }
+                            title={"Download PDF"}>
                             Download PDF
                         </a>
                     </p>

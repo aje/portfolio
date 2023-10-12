@@ -8,7 +8,7 @@ const ExperienceItem = ({item}: {item: ExpType}) => {
             <div className="grid grid-cols-5 gap-12 myBox gray">
                 <div className=" text-center col-span-2">
                     <div className="myBox py-1 sky mb-12">
-                        <img src={`/assets/projects/${item.image}`} alt={item.name} />
+                        <img src={`/assets/exp/${item.image}`} alt={item.name} />
                     </div>
                     <a target={"_blank"} href={item.url} className={"text-xl hover:underline"}>
                         {" "}
@@ -26,7 +26,7 @@ const ExperienceItem = ({item}: {item: ExpType}) => {
                     <div className="flex text-sky-700 justify-between mb-8">
                         <span>Date of finish:</span> <span className={"text-gradientf"}>{item.finish}</span>
                     </div>
-                    {item.description}
+                    <p className={"font-mono  text-3xl"}>{item.description}</p>
                 </div>
             </div>
 

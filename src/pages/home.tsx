@@ -30,20 +30,20 @@ const Home = () => {
                     <a
                         href={`mailto:${profile.email}`}
                         title={"Email"}
-                        className="mr-16 transition duration-150 hover:scale-110  cursor-pointer">
+                        className="mr-16 transition duration-150 hover:scale-125  cursor-pointer">
                         <img src={"/assets/mail.png"} width={40} alt="Email" />
                     </a>
                     <a
                         href={`http://linkedin/${profile.linkedin}`}
                         target={"_blank"}
                         title={"Linkedin"}
-                        className="mr-16 transition duration-150 hover:scale-110  cursor-pointer"
+                        className="mr-16 transition duration-150 hover:scale-125  cursor-pointer"
                         rel="noreferrer">
                         <img src="/assets/linkedin.png" width={40} alt="Linkedin" />
                     </a>
                     <a
                         href=""
-                        className="mr-16 transition duration-150 hover:scale-110  cursor-pointer"
+                        className="mr-16 transition duration-150 hover:scale-125  cursor-pointer"
                         rel="noreferrer">
                         <img src="/assets/chat.png" width={40} title={"Whatsapp"} alt="Whatsapp" />
                     </a>
@@ -51,10 +51,21 @@ const Home = () => {
                     {/*    <img src={"/assets/btnLinkedin.svg"} alt=""/>*/}
                     {/*</a>*/}
                 </div>
-                <p className={"mt-8 text-sky-900 text-xl text-shadow-1"}>Email: {profile.email}</p>
+                <p className={"mt-8 mb-1 text-sky-900 text-xl text-shadow-1"}>
+                    Email:{" "}
+                    <a href={`mailto:${profile.email}`} className={"hover:underline"}>
+                        {profile.email}
+                    </a>
+                </p>
                 <p className={" text-sky-900 text-shadow-1 text-xl"}>
                     Resume:{" "}
-                    <a href={profile.resume} className={"text-sky-700 hover:underline"} title={"Download PDF"}>
+                    <a
+                        href={profile.resume}
+                        download={"Resume-Behrouz-Erfanian"}
+                        className={
+                            "bg-sky-200 hover:bg-sky-400  hover:scale-105  transition inline-block p-1 myBox hover:underline"
+                        }
+                        title={"Download PDF"}>
                         <img
                             src="/assets/downloading.png"
                             width={20}

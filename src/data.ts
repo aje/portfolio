@@ -1,4 +1,4 @@
-import {EduType, ProjectType, RecType, SkillType} from "./types";
+import {EduType, ExpType, ProjectType, RecType, SkillType} from "./types";
 
 export const skills: SkillType[] = [
     {
@@ -60,52 +60,71 @@ export const recommends: RecType[] = [
 
 export const edus: EduType[] = [
     {
+        name: "Unicaf University",
+        major: "Web design",
+        start: "2022/07",
+        finish: "2024/07",
+        type: "Master",
+    },
+    {
         name: "Southwest Jiaotong",
-        image: "img.png",
-        url: "/ohioh",
-        description: "Sunrain is a major company",
-        start: "2021/02",
-        finish: "2022/02",
+        major: "Computer Science",
+        start: "2016/07",
+        finish: "2018/07",
         type: "master",
     },
     {
-        name: "Googsell",
-        image: "img.png",
-        url: "/ohioh",
-        description: "Sunrain is a major company",
-        start: "2021/02",
-        finish: "2022/02",
+        name: "Sadjad University of Technology",
+        major: "Computer Science",
+        start: "2012/07",
+        finish: "2016/05",
         type: "bachelor",
-    },
-    {
-        name: "Googsell",
-        image: "img.png",
-        url: "/ohioh",
-        description: "Sunrain is a major company",
-        start: "2021/02",
-        finish: "2022/02",
-        type: "Coursera",
     },
 ];
 
-export const experiences = [
+export const experiences: ExpType[] = [
     {
-        name: "Sunrain Project Manager",
-        image: "img_1.png",
-        url: "/ohioh",
-        description: "Sunrain is a major company",
-        position: "Front end developer",
-        start: "2021/02",
-        finish: "2022/02",
+        name: "Sichuan Yanbao",
+        image: "sunrain.png",
+        url: "https://srx.signabc.com/",
+        description: "Sunrain is a leading company in building customize stores for big brands ",
+        position: "Senior Frontend Developer",
+        start: "2018/06",
+        finish: "Currently working",
     },
     {
         name: "Googsell",
+        image: "goog.jpg",
+        description: "Googsell is the biggest Instagram marketplace, which you can easily create your own store in it.",
+        position: "Co-founder",
+        start: "2018/02",
+        finish: "2019/02",
+    },
+    {
+        name: "Emenu",
         image: "img_1.png",
-        url: "/ohioh",
-        description: "Sunrain is a major company",
-        position: "Front end developer",
-        start: "2021/02",
-        finish: "2022/02",
+        description: "Emenu is a electronic menu using QR code in Restaurants and coffee shops",
+        position: "Co-founder",
+        start: "2019/02",
+        finish: "2020/02",
+    },
+    {
+        name: "Hamrah Afzar Daya",
+        image: "daya.png",
+        description: "Web Designer",
+        position: "Web Designer",
+        url: "https://dayamooz.co/",
+        start: "2016/02",
+        finish: "2018/02",
+    },
+    {
+        name: "Andriman",
+        image: "and.png",
+        description: "Web Designer",
+        position: "Web Designer",
+        start: "2015/02",
+        url: "https://www.2nabsh.com/",
+        finish: "2016/02",
     },
 ];
 
@@ -122,10 +141,70 @@ export const projects: ProjectType[] = [
         description: "Sunrain is a major company",
         url: "",
     },
+    {
+        name: "Sunrain Project Manager",
+        image: "img_1.png",
+        description: "Sunrain is a major company",
+        url: "",
+    },
+    {
+        name: "Googsell",
+        image: "img_1.png",
+        description: "Sunrain is a major company",
+        url: "",
+    },
+    {
+        name: "Sunrain Project Manager",
+        image: "img_1.png",
+        description: "Sunrain is a major company",
+        url: "",
+    },
+    {
+        name: "Googsell",
+        image: "img_1.png",
+        description: "Sunrain is a major company",
+        url: "",
+    },
+    {
+        name: "Sunrain Project Manager",
+        image: "img_1.png",
+        description: "Sunrain is a major company",
+        url: "",
+    },
+    {
+        name: "Googsell",
+        image: "img_1.png",
+        description: "Sunrain is a major company",
+        url: "",
+    },
+    {
+        name: "Sunrain Project Manager",
+        image: "img_1.png",
+        description: "Sunrain is a major company",
+        url: "",
+    },
+    {
+        name: "Googsell",
+        image: "img_1.png",
+        description: "Sunrain is a major company",
+        url: "",
+    },
+    {
+        name: "Sunrain Project Manager",
+        image: "img_1.png",
+        description: "Sunrain is a major company",
+        url: "",
+    },
+    {
+        name: "Googsell",
+        image: "img_1.png",
+        description: "Sunrain is a major company",
+        url: "",
+    },
 ];
 
 export const profile = {
-    resume: "",
+    resume: "/Resume-Behrouz-Erfanian.pdf",
     email: "behroozina@live.com",
     linkedin: "behroozina",
     whatsapp: "@Behroozina",
